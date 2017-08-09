@@ -1,0 +1,282 @@
+2017-08-04 17:06:57,508 [Thread-39:140591224567552] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-08-04 17:14:36,117 [Thread-214:140591241352960] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /store/
+Traceback (most recent call last):
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jinuo/Zphone/shop/views.py", line 27, in store
+    return render(request,'store.html',locals())
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2017-08-04 17:14:36,849 [Thread-215:140591341225728] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /store/
+Traceback (most recent call last):
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jinuo/Zphone/shop/views.py", line 27, in store
+    return render(request,'store.html',locals())
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2017-08-04 17:14:37,294 [Thread-216:140591249745664] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /store/
+Traceback (most recent call last):
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jinuo/Zphone/shop/views.py", line 27, in store
+    return render(request,'store.html',locals())
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2017-08-04 17:14:37,644 [Thread-217:140591224567552] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /store/
+Traceback (most recent call last):
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jinuo/Zphone/shop/views.py", line 27, in store
+    return render(request,'store.html',locals())
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2017-08-04 17:14:37,939 [Thread-218:140591258138368] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /store/
+Traceback (most recent call last):
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jinuo/Zphone/shop/views.py", line 27, in store
+    return render(request,'store.html',locals())
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2017-08-04 17:14:38,125 [Thread-219:140591232960256] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /store/
+Traceback (most recent call last):
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jinuo/Zphone/shop/views.py", line 27, in store
+    return render(request,'store.html',locals())
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2017-08-04 17:14:38,390 [Thread-220:140591241352960] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /store/
+Traceback (most recent call last):
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jinuo/Zphone/shop/views.py", line 27, in store
+    return render(request,'store.html',locals())
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2017-08-04 17:14:38,542 [Thread-221:140591341225728] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /store/
+Traceback (most recent call last):
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jinuo/Zphone/shop/views.py", line 27, in store
+    return render(request,'store.html',locals())
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 118, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/home/jinuo/myvenv/local/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base.html
+2017-08-09 15:49:10,640 [Thread-37:5140] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico

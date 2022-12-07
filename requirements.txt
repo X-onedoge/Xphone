@@ -5,7 +5,7 @@ Automat==0.6.0
 beautifulsoup4==4.6.0
 bs4==0.0.1
 cache==1.0.3
-certifi==2017.4.17
+certifi==2022.12.7
 cffi==1.10.0
 chardet==3.0.3
 constantly==15.1.0
